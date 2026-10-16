@@ -1,7 +1,8 @@
 # ANNalog Scaffold Hopping
 
-ANNalog is a transformer sequence-to-sequence model trained on pairs of molecules tested in the same ChEMBL33 assay, which it treats as analogues. The Ersilia model proposes scaffold hops of an input compound, meaning analogues whose Bemis-Murcko scaffold differs from its own. It samples at the authors' temperature of 1.2 and resamples to reach 100 hops where possible. Acyclic inputs have no scaffold, so any ring-containing output counts as a hop. Training excluded molecules above 600 Da, with over seven rotatable bonds, or with elements beyond C, N, O, S, F, Cl and Br.
+ANNalog is a transformer sequence-to-sequence model trained on pairs of molecules tested in the same ChEMBL33 assay, which it treats as analogues. The Ersilia model proposes scaffold hops of an input compound, meaning analogues whose Bemis-Murcko scaffold differs from its own. It samples at the authors temperature of 1.2 and resamples to reach 100 hops where possible. Acyclic inputs have no scaffold, so any ring-containing output counts as a hop. Training excluded molecules above 600 Da, with over seven rotatable bonds, or with elements beyond C, N, O, S, F, Cl and Br.
 
+This model was incorporated on 2026-10-14.
 
 
 ## Information
@@ -23,7 +24,7 @@ ANNalog is a transformer sequence-to-sequence model trained on pairs of molecule
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Variable`
-- **Interpretation:** Up to 100 sampled analogues whose Bemis-Murcko scaffold differs from the input's; unused slots stay empty.
+- **Interpretation:** Up to 100 sampled analogues whose Bemis-Murcko scaffold differs from the inputs; unused slots stay empty.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -43,8 +44,11 @@ _10 of 100 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos80sj.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos80sj.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `16`
+- **Environment Size (Mb):** `1417`
 
 
 ### References
