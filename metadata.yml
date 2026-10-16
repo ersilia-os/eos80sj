@@ -1,6 +1,6 @@
 Identifier: eos80sj
 Slug: annalog
-Status: In progress
+Status: Ready
 Title: ANNalog Scaffold Hopping
 Description: ANNalog is a transformer sequence-to-sequence model trained on 
   pairs of molecules tested in the same ChEMBL33 assay, which it treats as 
@@ -40,6 +40,18 @@ Source Code: https://github.com/DVNecromancer/ANNalog
 License: MIT
 Contributor: arnaucoma24
 Incorporation Date: '2026-10-14'
+Last Packaging Date: '2026-10-16'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos80sj.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos80sj
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 16.0
 Environment Size: 1417.0
+Image Size: 1361.52
+Computational Performance 1: 52.13
+Computational Performance 2: 176.67
+Computational Performance 3: -1.0
+Computational Performance 4: -1.0
+Computational Performance 5: -1.0
