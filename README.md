@@ -2,7 +2,7 @@
 
 ANNalog is a transformer sequence-to-sequence model trained on pairs of molecules tested in the same ChEMBL33 assay, which it treats as analogues. The Ersilia model proposes scaffold hops of an input compound, meaning analogues whose Bemis-Murcko scaffold differs from its own. It samples at the authors temperature of 1.2 and resamples to reach 100 hops where possible. Acyclic inputs have no scaffold, so any ring-containing output counts as a hop. Training excluded molecules above 600 Da, with over seven rotatable bonds, or with elements beyond C, N, O, S, F, Cl and Br.
 
-This model was incorporated on 2026-10-14.Last packaged on 2026-10-16.
+This model was incorporated on 2026-10-14.Last packaged on 2026-10-22.
 
 ## Information
 ### Identifiers
@@ -50,11 +50,11 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `16`
 - **Environment Size (Mb):** `1418`
-- **Image Size (Mb):** `1361.52`
+- **Image Size (Mb):** `1362.26`
 
 **Computational Performance (seconds):**
-- 10 inputs: `52.13`
-- 100 inputs: `-1`
+- 10 inputs: `45.74`
+- 100 inputs: `1388.57`
 - 10000 inputs: `-1`
 
 ### References
