@@ -2,7 +2,8 @@
 
 ANNalog is a transformer sequence-to-sequence model trained on pairs of molecules tested in the same ChEMBL33 assay, which it treats as analogues. The Ersilia model proposes scaffold hops of an input compound, meaning analogues whose Bemis-Murcko scaffold differs from its own. It samples at the authors temperature of 1.2 and resamples to reach 100 hops where possible. Acyclic inputs have no scaffold, so any ring-containing output counts as a hop. Training excluded molecules above 600 Da, with over seven rotatable bonds, or with elements beyond C, N, O, S, F, Cl and Br.
 
-This model was incorporated on 2026-10-14.Last packaged on 2026-10-22.
+This model was incorporated on 2026-10-14.
+Last packaged on 2026-10-22.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 100 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos80sj](https://hub.docker.com/r/ersiliaos/eos80sj)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos80sj.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos80sj.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos80sj_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos80sj_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `16`
